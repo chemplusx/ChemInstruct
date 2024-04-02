@@ -16,9 +16,9 @@ from huggingface_hub.hf_api import HfFolder
 from NERLLaMA.src.common.constants import LLAMA_MODELS, AUTH_TOKEN_REQUIREMENT_ERROR
 from NERLLaMA.src.schemas.DataStruct import create_train_test_instruct_datasets
 
-HfFolder.save_token("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")
+HfFolder.save_token("<your_hf_api_token>")
 
-token = "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"
+token = "<your_hf_api_token>"
 
 
 def batch(iterable, n=1):

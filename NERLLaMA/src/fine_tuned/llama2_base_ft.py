@@ -15,7 +15,7 @@ from NERLLaMA.src.schemas.Conversation import preprocess_instance
 
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:256"
 
-HfFolder.save_token("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")
+HfFolder.save_token("<your_hf_api_token>")
 
 
 def get_response(responses):
