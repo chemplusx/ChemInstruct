@@ -30,6 +30,9 @@ models:
 - `llama2-chat-ft` - LLaMA2 Chat Fine-Tuned
 - `llama2-base-ft` - LLaMA2 base Fine-Tuned
 - `llama2-chat` - LLaMA2 Chat HF
+- `llama2-chat-70b` - LLaMA2 Chat HF 70B
+- `mistral-chat-7b` - MistralAI 7B Instruct v0.2
+- `falcon-chat-7b` - TII's Falcon 7b Instruct
 
 pipelines:
 - `llm` - Large Language Model

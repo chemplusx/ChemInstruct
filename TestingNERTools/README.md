@@ -1,5 +1,3 @@
-create a readme file for the project
-
 # Introduction
 TestingNERTools is a project to test the available NER tools on the market. The project is designed to be easy to use and flexible, allowing users to easily test the supported tools in the project.
 
