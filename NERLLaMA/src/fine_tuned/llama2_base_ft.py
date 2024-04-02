@@ -40,7 +40,7 @@ def generate(model, text, max_new_tokens=256):
     ]
     prompts = [preprocess_instance(convo["conversations"]) for convo in conversation]
     sampling_params = SamplingParams(
-        temperature=0.9, max_tokens=max_new_tokens, stop=["</s>"]
+        temperature=0.1, max_tokens=max_new_tokens, stop=["</s>"]
     )
     responses = model.generate(prompts, sampling_params)
     responses_corret_order = []
