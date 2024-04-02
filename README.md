@@ -7,7 +7,9 @@ This project ChemInstruct has 3 main components:
 
 # Installation
 Installation for both the components is different and the same is mentioned in the respective folders.
+
 `NERLLaMA` : `ChemInstruct/NERLLaMA/README.md`
+
 `TestingNERTools` : `ChemInstruct/TestingNERTools/README.md`
 
 # Usage
