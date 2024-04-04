@@ -1,4 +1,3 @@
-
 # Introduction
 This project ChemInstruct has 3 main components:
 1. TestinNERTools: Testing NER Tools on the NLMChem and ChemInstruct dataset
