@@ -1,6 +1,11 @@
 import os
 from setuptools import setup, find_packages  # or find_namespace_packages
 
+CWD = os.getcwd()
+print("Current working directory: ", CWD)
+
+os.system(f'echo NERLLAMA_SOURCE={CWD} >> ~/.bash_profile; echo export NERLLAMA_SOURCE')
+
 if os.path.exists('README.md'):
     long_description = open('README.md').read()
 else:

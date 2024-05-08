@@ -6,7 +6,6 @@ from nerllama.common.constants import LLAMA_MODEL_MAP, AUTH_TOKEN_REQUIREMENT_ER
 
 
 def run_model(model, text, inputFile, pipeline, max_new_tokens, auth_token):
-    print("aa gya")
     if not pipeline or pipeline != "RAG":
         if model in ["llama2-base-ft", "base-ft"]:
             from nerllama.fine_tuned.llama2_base_ft import run

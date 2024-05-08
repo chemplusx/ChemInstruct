@@ -7,6 +7,7 @@ from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import transformers
 import torch
+from huggingface_hub.hf_api import HfFolder
 
 from nerllama.common.constants import (
     LLAMA_MODELS,
@@ -26,7 +27,8 @@ def generate(model, sources, generation_config):
         model.model_parallel = True
 
     max_instances = -1
-    NERLLAMA_SOURCE = os.environ.get('NETLLAMA_SOURCE', None)
+    NERLLAMA_SOURCE = os.environ.get('NERLLAMA_SOURCE', None)
+    print("NERLLAMA_SOURCE : ", os.environ)
     if not NERLLAMA_SOURCE:
         raise Exception("NERLLAMA_SOURCE is not set. Please set the NERLLAMA_SOURCE environment variable to <some path>/ChemInstruct/NERLLaMA")
     _, test_dataset = create_train_test_instruct_datasets(
@@ -91,6 +93,7 @@ def run(
     if model_name is None:
         model_name = "tiiuae/falcon-7b-instruct"
 
+    HfFolder.save_token(auth_token)
     try:
         with wandb.init(project="Instruction NER") as run:
             generate(model_name, text, max_new_tokens)

@@ -16,10 +16,6 @@ from huggingface_hub.hf_api import HfFolder
 from nerllama.common.constants import LLAMA_MODELS, AUTH_TOKEN_REQUIREMENT_ERROR
 from nerllama.schemas.DataStruct import create_train_test_instruct_datasets
 
-HfFolder.save_token("<your_hf_api_token>")
-
-token = "<your_hf_api_token>"
-
 
 def batch(iterable, n=1):
     l = len(iterable)
@@ -61,7 +57,7 @@ def generate(model, sources, generation_config):
 
     max_instances = -1
     _, test_dataset = create_train_test_instruct_datasets(
-        "../src/data/annotated_nlm.json"
+        "../nerllama/data/annotated_nlm.json"
     )
     if max_instances != -1 and max_instances < len(test_dataset):
         test_dataset = test_dataset[:max_instances]
@@ -117,7 +113,7 @@ def run(
 
     if model_name is None:
         model_name = "ChemPlusX/llama2-base-ft-NER"
-
+    HfFolder.save_token(auth_token)
     try:
         with wandb.init(project="Instruction NER") as run:
             generate(model_name, text, max_new_tokens)
