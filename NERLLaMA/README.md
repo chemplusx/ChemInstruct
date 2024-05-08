@@ -46,6 +46,19 @@ pipelines:
 - `rag` - Retrieval Augmented Generation
 
 
+We have used [W&B](https://wandb.ai/) to collect and sync generation / training data.
+When using CLI, you might be prompted for connection to W&B.
+
+```bash
+wandb: (1) Create a W&B account
+wandb: (2) Use an existing W&B account
+wandb: (3) Don't visualize my results
+wandb: Enter your choice: 3
+```
+
+When asked for choice, enter 3, to skip connecting to W&B
+
+
 # CLI-Interaction
 
 NERLLaMA exposes a `nerl` cli command for easy access of the tolls functionalities
@@ -72,6 +85,9 @@ nerl nerllama run /home/ubuntu/data/sample_text.txt meta-llama/Meta-Llama-3-8B-I
 ```
 nerl nerllama run /home/ubuntu/data/sample_text.txt llama2-chat-ft RAG hf_*****
 ```
+
+
+
 
 
 # Contributing

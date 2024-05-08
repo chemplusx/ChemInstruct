@@ -21,7 +21,7 @@ ENTITY_TYPES = ["chemical"]
 ENTITY_DEFENITIONS = [
     "mention of drugs, organic compounds, protiens and any other chemical substances"
 ]
-INSTRUCTION_TEXT = "You are solving the NER problem. Extract from the text words related to each of the following entities: chemical"
+INSTRUCTION_TEXT = "You are solving the Chemical Named Entity Recognition problem. Extract from the text words related to chemical entities"
 INSTRUCTION_TEXT_RAG = """
 From the text, extract all the exact mentions of chemical entities. (A chemical entity can be drugs, organic compounds, protiens, enzymes and any other chemical substances)
 """
