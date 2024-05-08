@@ -38,7 +38,7 @@ setup(name='ChemInstruct',
         'torch==2.1.2',
         'tqdm==4.66.1',
         'transformers==4.37.0',
-        # 'vllm==0.2.7',
+        'vllm==0.2.7',
         'wandb==0.16.2'
     ],
     classifiers=[
