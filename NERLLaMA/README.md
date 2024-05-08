@@ -3,11 +3,18 @@ NERLLaMA is a Named Entity Recognition (NER) tool that uses a machine learning a
 
 # Installation
 To install NERLLaMA, you will need to have Python 3.9 or higher installed on your system.
-To install all the dependencies, run the following command:
+
+NERLLaMA gets installed as a package also exposes command line interface to inteact with its components
+
+To install NERLLaMA, navigate to ChemInstruct/NERLLaMA, and run the following command:
 
 ```bash
-pip install -r requirements.txt
+pip install -e .
 ```
+
+Once the above installation completes. a `nerl` CLI interface is available to be accessed from the terminal.
+
+**Check CLI-Interaction, for more details on how to use the command.**
 
 NERLLaMA uses the Hugging Face Transformers library to work with LLMs. You will need to have an account on the Hugging Face website to use the tool. You can sign up for an account [here](https://huggingface.co/join).
 We have fine-tuned and evaluated the pre=trained models over GPU. Hence the project requires [CUDA](https://developer.nvidia.com/cuda-downloads) and [cuDNN](https://developer.nvidia.com/rdp/cudnn-download) to be installed on your system.
