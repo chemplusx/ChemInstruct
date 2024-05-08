@@ -30,9 +30,9 @@ def batch(iterable, n=1):
 def generate(model, sources, generation_config):
     model_name = "chrohi/llama2-NLMC-NER-FT"
 
-    generation_config = GenerationConfig.from_pretrained(model_name, token=token)
+    generation_config = GenerationConfig.from_pretrained(model_name)
 
-    peft_config = PeftConfig.from_pretrained(model_name, token=token)
+    peft_config = PeftConfig.from_pretrained(model_name)
     base_model_name = peft_config.base_model_name_or_path
 
     models = {
@@ -42,11 +42,11 @@ def generate(model, sources, generation_config):
     }
 
     model = AutoModelForCausalLM.from_pretrained(
-        base_model_name, load_in_8bit=True, device_map="auto", token=token
+        base_model_name, load_in_8bit=True, device_map="auto"
     )
 
-    model = PeftModel.from_pretrained(model, model_name, token=token)
-    tokenizer = AutoTokenizer.from_pretrained(model_name, token=token)
+    model = PeftModel.from_pretrained(model, model_name)
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
 
     model.eval()
     model = torch.compile(model)
@@ -108,7 +108,7 @@ def run(
         raise Exception(f"Invalid model. Model: {model_name}")
     if not auth_token:
         raise Exception(f"Invalid/Empty Auth Token. {AUTH_TOKEN_REQUIREMENT_ERROR}")
-    if not inputFile or not Path(inputFile).exists():
+    if not inputFile:
         raise Exception(f"Invalid/Empty Dataset file. File: {inputFile}")
 
     if model_name is None:

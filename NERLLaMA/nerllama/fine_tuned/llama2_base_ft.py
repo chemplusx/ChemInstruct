@@ -61,7 +61,7 @@ def run(
         raise Exception(f"Invalid model. Model: {model_name}")
     if not auth_token:
         raise Exception(f"Invalid/Empty Auth Token. {AUTH_TOKEN_REQUIREMENT_ERROR}")
-    if (not inputFile or not Path(inputFile).exists()) and not text:
+    if (not inputFile) and not text:
         raise Exception(f"Invalid/Empty Dataset file. File: {inputFile}")
 
     if model_name is None:

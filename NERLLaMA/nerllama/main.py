@@ -43,7 +43,7 @@ def run_model(model, text, inputFile, pipeline, max_new_tokens, auth_token):
             full_model_name = LLAMA_MODEL_MAP["falcon-chat-180b"]
             return run(full_model_name, text, inputFile, max_new_tokens, auth_token)
         else:
-            from nerllama.fine_tuned.falcon import run
+            from nerllama.fine_tuned.llama2_chat import run
             return run(model, text, inputFile, max_new_tokens, auth_token)
     else:
         full_model_name = None
