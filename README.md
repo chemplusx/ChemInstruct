@@ -43,6 +43,8 @@ This cli command facilitates quick and easy use of the nerllama commands to extr
 Check [CLI-Interaction](#cli-interaction), for more details on how to use the command.
 
 
+Some part of this project relies on vllm. Ensure you have gcc version 5 or later, and CUDA versions between 11.0 and 11.8, as specified in the installation requirements for vllm.
+
 NERLLaMA uses the Hugging Face Transformers library to work with LLMs. You will need to have an account on the Hugging Face website to use the tool. You can sign up for an account [here](https://huggingface.co/join).
 We have fine-tuned and evaluated the pre=trained models over GPU. Hence the project requires [CUDA](https://developer.nvidia.com/cuda-downloads) and [cuDNN](https://developer.nvidia.com/rdp/cudnn-download) to be installed on your system.
 
