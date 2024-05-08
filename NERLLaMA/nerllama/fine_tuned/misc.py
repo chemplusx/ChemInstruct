@@ -61,7 +61,7 @@ def run(
     max_new_tokens=256,
     auth_token=None,
 ):
-    if not model_name or model_name not in LLAMA_CHAT_MODELS:
+    if not model_name:
         raise Exception(f"Invalid model. Model: {model_name}")
     if not auth_token:
         raise Exception(f"Invalid/Empty Auth Token. {AUTH_TOKEN_REQUIREMENT_ERROR}")

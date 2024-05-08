@@ -42,7 +42,7 @@ def generate(model, sources, generation_config):
     }
 
     model = AutoModelForCausalLM.from_pretrained(
-        base_model_name, load_in_8bit=True, device_map="auto"
+        base_model_name, load_in_8bit=False, device_map="auto"
     )
 
     model = PeftModel.from_pretrained(model, model_name)
@@ -104,7 +104,7 @@ def run(
     max_new_tokens=256,
     auth_token=None,
 ):
-    if not model_name or model_name not in LLAMA_MODELS:
+    if not model_name:
         raise Exception(f"Invalid model. Model: {model_name}")
     if not auth_token:
         raise Exception(f"Invalid/Empty Auth Token. {AUTH_TOKEN_REQUIREMENT_ERROR}")
