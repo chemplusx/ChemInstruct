@@ -53,7 +53,7 @@ pipelines:
 - `llm` - Large Language Model
 - `rag` - Retrieval Augmented Generation
 
-# CLI-Interaction
+### CLI-Interaction
 
 NERLLaMA exposes a `nerl` cli command for easy access of the tolls functionalities
 
@@ -61,6 +61,23 @@ Running `nerl nerllama` command to extract Chemical Entities from given file
 
 ```
 nerl nerllama run "<path to file containing chemical literature>" <model HF path / or shorthand (mentioned above)> <pipeline: LLM/RAG> <hf token>
+```
+
+#### Sample:
+
+* Predefined Models:
+```
+nerl nerllama run /home/ubuntu/data/sample_text.txt llama2-chat-ft LLM hf_*****
+```
+
+* Any new Model (Chat based)
+```
+nerl nerllama run /home/ubuntu/data/sample_text.txt meta-llama/Meta-Llama-3-8B-Instruct LLM hf_*****
+```
+
+* Running with RAG:
+```
+nerl nerllama run /home/ubuntu/data/sample_text.txt llama2-chat-ft RAG hf_*****
 ```
 
 
