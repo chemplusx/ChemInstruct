@@ -20,7 +20,7 @@ To install NERLLaMA, navigate to ChemInstruct/NERLLaMA, and run the following co
 pip install -e .
 ```
 
-# Usage
+### Usage
 
 The tool / package can be used as below
 
