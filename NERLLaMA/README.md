@@ -49,7 +49,7 @@ python main.py --text "Your text goes here" --model "llama2-chat-ft" --pipeline 
 ```
 
 ```bash
-python main.py --file "path/to/inputfile" --model "llama2-chat-ft" --pipeline "llm" --auth_token "<your huggingface auth token>"
+python main.py --file "<workspace_root>/ChemInstruct/NERLLaMA/nerllama/data/sample.txt" --model "llama2-chat-ft" --pipeline "llm" --auth_token "<your huggingface auth token>"
 ```
 
 models:
