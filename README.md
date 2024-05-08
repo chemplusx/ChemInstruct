@@ -20,7 +20,26 @@ To install NERLLaMA, navigate to ChemInstruct/NERLLaMA, and run the following co
 pip install -e .
 ```
 
-Once the above installation completes. a `nerl` CLI interface is available to be accessed from the terminal.
+# Usage
+
+The tool / package can be used as below
+
+1: As package:
+
+This installs nerllama package in your active python venv, or conda env.
+Hence the package can be directly used in your own custom code.
+
+```python
+from nerllama.schemas.ChemStruct import InstructDataset
+
+id = InstructDataset()
+id.convert_instruction_causal()
+```
+
+2: From CLI
+
+Once the above installation completes. a `nerl` CLI interface is also available to be accessed from the terminal.
+This cli command facilitates quick and easy use of the nerllama commands to extract entities etc.
 
 **Check CLI-Interaction, for more details on how to use the command.**
 
