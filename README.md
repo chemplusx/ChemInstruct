@@ -108,7 +108,7 @@ pip install -r requirements.txt
 Usage for both the components is different and the same is mentioned in the respective folders.
 
 # License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
 
 # Acknowledgements
 We would like to thank the Hugging Face team for providing the infrastructure and tools that made this project possible. We would also like to thank the community for their support and contributions.
