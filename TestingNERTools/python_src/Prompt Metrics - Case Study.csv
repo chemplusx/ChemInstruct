@@ -1,0 +1,372 @@
+Document / Article,Chemical Entities,Chemical/Drug Interactions,LLM Extracted Chemical Entities,LLM Evaluated Interaction - Chemical/Drug Interaction
+https://link.springer.com/article/10.1007/s13318-024-00909-0,"Cyclin D-CDK4/6-Rb pathway
+Palbociclib
+Ribociclib
+Abemaciclib
+Aromatase inhibitors
+Proton pump inhibitors (PPIs)
+Rabeprazole
+Lansoprazole
+Esomeprazole
+Omeprazole
+Pantoprazole
+P-glycoprotein (P-gp)
+CYP3A4
+CYP2C19
+Tyrosine kinase inhibitors
+Breast cancer resistance protein","Palbociclib and Rabeprazole
+Palbociclib and PPIs
+Ribociclib and PPIs
+Palbociclib and Ribociclib with P-gp and CYP3A4 inhibitors
+Rabeprazole and P-gp
+Pantoprazole and Tyrosine Kinase Inhibitors","Palbociclib
+Ribociclib
+Abemaciclib
+Acid-reducing agents
+Proton pump inhibitors (PPIs)
+Gastroesophageal reflux disease
+CDK4/6-Rb
+rabeprazole
+lansoprazole
+esomeprazole
+omeprazole
+pantoprazole
+gastric pH
+P-glycoprotein (P-gp)
+CYP3A4
+CYP2C19
+breast cancer resistance protein","Palbociclib and rabeprazole
+Palbociclib and PPIs
+Ribociclib and PPIs
+PPIs and tyrosine kinase inhibitors"
+https://link.springer.com/article/10.1007/s40262-024-01437-5,"Letermovir
+Maribavir
+Cytomegalovirus (CMV)
+Cytochrome P450 (CYP) (mentioned as a family of enzymes rather than a specific entity)
+Sensitive substrate (generic reference in the context of CYP enzymes)
+Moderate CYP inhibitors (general class, not a specific entity)
+Strong CYP inhibitors (general class, not a specific entity)
+Moderate CYP inducers (general class, not a specific entity)
+Strong CYP inducers (general class, not a specific entity)
+Tacrolimus
+Cyclosporine
+Sirolimus
+Everolimus
+Voriconazole
+Itraconazole
+Isavuconazole
+Letermovir:
+Repaglinide:
+Rosiglitazone:
+Digoxin:
+Apixaban
+Rivaroxaban:
+Atorvastatin:
+Cyclosporine
+Ibrutinib:
+Ruxolitinib:
+Midazolam:
+Levonorgestrel/Ethinyl Estradiol","Letermovir and Tacrolimus:
+Letermovir and Cyclosporine:
+Letermovir and Sirolimus:
+Letermovir and Everolimus:
+Letermovir and Voriconazole
+Letermovir and Itraconazole
+Letermovir and Isavuconazole
+Rifampin and Letermovir:
+Letermovir and Repaglinide:
+Letermovir and Rosiglitazone:
+Letermovir and Digoxin:
+Letermovir with Apixaban and Rivaroxaban:
+Letermovir and Atorvastatin:
+Letermovir, Cyclosporine, and Statins (Three-Way Interaction):
+Letermovir and Ibrutinib:
+Letermovir and Ruxolitinib:
+Letermovir and Midazolam:
+Letermovir and Levonorgestrel/Ethinyl Estradiol
+...","Letermovir
+Maribavir
+Cytomegalovirus (CMV)
+Tacrolimus
+Cyclosporine
+Sirolimus
+Everolimus
+Voriconazole
+Itraconazole
+Isavuconazole
+Letermovir:
+Repaglinide:
+Rosiglitazone:
+Digoxin:
+Apixaban
+Rivaroxaban:
+Atorvastatin:
+Cyclosporine
+Ibrutinib:
+Ruxolitinib:
+Midazolam:
+Levonorgestrel/Ethinyl Estradiol","Letermovir and Tacrolimus:
+Letermovir and Cyclosporine:
+Letermovir and Sirolimus:
+Letermovir and Everolimus:
+Letermovir and Voriconazole
+Letermovir and Itraconazole
+Letermovir and Isavuconazole
+Rifampin and Letermovir:
+Letermovir and Repaglinide:
+Letermovir and Rosiglitazone:
+Letermovir and Atorvastatin:
+Letermovir and Digoxin:
+Letermovir and Apixaban and Rivaroxaban:
+Letermovir and Midazolam:
+Letermovir and Cyclosporine and Statins:
+Letermovir and levonorgestrel/ethinyl estradiol
+Letermovir and ibrutinib
+Letermovir and ruxolitinib
+..."
+https://bmcpharmacoltoxicol.biomedcentral.com/articles/10.1186/s40360-024-00738-6#Abs1,"Methotrexate 
+MTX
+rheumatoid arthritis
+RA
+tumor necrosis factor-alpha inhibitors
+disease-modifying antirheumatic drugs - DMARDs
+nonsteroidal anti-inflammatory drugs - NSAIDs
+acetaminophen
+APAP
+paracetamol
+prostaglandin
+cyclooxygenase
+aspirin
+OAT1
+OAT3
+MRP4
+creatinine
+albumin","methotrexate (MTX) and nonsteroidal anti-inflammatory drugs (NSAIDs)
+methotrexate (MTX) and acetaminophen (APAP)/paracetamol","MTX
+methotrexate, 
+NSAIDs
+paracetamol
+acetaminophen 
+APAP
+OAT1
+OAT3 
+MRP4
+tumor necrosis factor-alpha inhibitors
+disease-modifying antirheumatic drugs (DMARDs)
+cyclooxygenase inhibitors
+prostaglandin
+serum creatinine
+urinary albumin
+aspirin","methotrexate (MTX) and nonsteroidal anti-inflammatory drugs (NSAIDs)
+methotrexate (MTX) and acetaminophen (APAP)/paracetamol"
+https://www.dovepress.com/evaluation-of-drug-drug-interaction-between-henagliflozin-and-hydrochl-peer-reviewed-fulltext-article-DDDT,"Henagliflozin
+Hydrochlorothiazide
+Metformin
+Thiazolidinedione
+Rosiglitazone
+Pioglitazone
+Saxagliptin
+Sulfonylurea
+α-Glycosidase inhibitors
+sodium-glucose cotransporter 2 (SGLT2)
+glucose
+calcium
+potassium
+phosphorus
+chloride
+sodium
+insulin
+alpha-glycosidase",Henagliflozin and Hydrochlorothiazide,"henagliflozin
+hydrochlorothiazide
+metformin
+thiazolidinedione
+sulfonylurea
+rosiglitazone
+pioglitazone
+saxagliptin
+sodium-glucose cotransporter 2 (SGLT2)
+glucose
+calcium
+potassium
+phosphorus
+chloride
+sodium
+insulin
+alpha-glycosidase",Henagliflozin and Hydrochlorothiazide
+https://www.tandfonline.com/doi/10.1080/13880209.2023.2173253?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed#abstract,"afatinib
+clarithromycin
+CY2D6
+CYP1A2
+CYP2B1
+CYP2B6
+CYP2C11
+CYP2C19
+CYP2C8
+CYP2C9
+CYP2D6
+CYP2E1
+CYP3A1/2
+CYP3A4
+dacomitinib
+erlotinib
+gefitinib
+M-I
+M-III
+poziotinib
+PPI
+quinazoline
+rabeprazole
+SULT2A1
+tacrolimus
+TAK-438
+vonoprazan","Macrolide antibiotics and calcium blockers
+Clarithromycin and vonoprazan: 
+Rabeprazole and tacrolimus
+Poziotinib and vonoprazan
+Poziotinib and erlotinib
+Poziotinib and gefitinib:","afatinib
+calcium blockers
+clarithromycin
+CY2D6
+CY3A4/5
+CYP1A2
+CYP2B1
+CYP2B6
+CYP2C11
+CYP2C19
+CYP2C8
+CYP2C9
+CYP2D6
+CYP2E1
+CYP3A4
+cytochrome P450 enzymes
+dacomitinib
+erlotinib
+gefitinib
+macrolide antibiotics
+poziotinib
+PPI
+rabeprazole
+SULT2A1
+tacrolimus
+vonoprazan","Macrolide antibiotics and calcium blockers
+Vonoprazan and clarithromycin
+Rabeprazole and vonoprazan: 
+Poziotinib and vonoprazan:
+Poziotinib and erlotinib
+Poziotinib and gefitinib:
+Poziotinib and dacomitinib
+Vonoprazan and CYP2C19 allelic mutations"
+https://www.aerzteblatt.de/int/archive/article/235523,"Tetrahydrocannabinol
+THC
+(−)-Δ9-trans-tetrahydrocannabinol
+Cannabidiol
+CBD
+Nabiximols
+Nabilone
+Epidyolex
+Cannabigerol
+Cannabivarin
+Terpenes","THC and CYP3A4 substrates
+THC and ABCB1 transporter inhibitors (e.g., verapamil)
+CBD and CYP3A4 inhibitors
+CBD and CYP2C19 inhibitors
+Cannabinoid drugs and opioids
+Cannabinoid drugs and anticonvulsants
+Cannabinoid drugs and antidepressant","BfArM (Bundesamt für Arzneimittel und Medizinprodukte)
+BtMG (Betäubungsmittelgesetz)
+cannabigerol
+cannabivarin
+CBD
+DAC (Deutscher Arzneimittel Codex)
+nabilone
+nabiximols
+NRF (Neue Rezeptur-Formularium)
+SGB (Sozialgesetzbuch)
+THC
+THC-CDs (tetrhydrocannabinoid-containing cannabinoid drugs).","THC and CYP3A4 substrates
+THC and ABCB1 transporter inhibitors (e.g., verapamil)
+CBD and CYP3A4 inhibitors
+CBD and CYP2C19 inhibitors
+Cannabinoid drugs and opioids
+Cannabinoid drugs and anticonvulsants
+Cannabinoid drugs and antidepressant"
+https://link.springer.com/article/10.1007/s00228-023-03612-2,"Oxycodone
+CYP3A4
+CYP2D6","Oxycodone and CYP3A4 perpetrators
+Oxycodone and CYP2D6 perpetrators
+Oxycodone with two CYP3A4 and/or CYP2D6 perpetrators (double interactions)","oxycodone
+CYP3A4
+CYP2D6","Oxycodone + CYP3A4 perpetrators
+Oxycodone + CYP2D6 perpetrators
+Oxycodone + double interactions (concomitant use with two CYP3A4 and/or CYP2D6 perpetrators)"
+https://link.springer.com/article/10.1007/s00228-024-03652-2,"amiodarone
+antioxidant vitamins
+aztreonam
+clarithromycin
+cyclosporine
+dextromethorphan
+digoxin
+levothyroxine
+Linezolid
+magnesium-containing antacids
+P-glycoprotein.
+phenobarbital
+phenylpropanolamine
+proton pump inhibitors
+rifampicin
+venlafaxine","Rifampicin and Linezolid
+Levothyroxine and Linezolid
+Venlafaxine and Linezolid
+Phenobarbital and Linezolid
+Clarithromycin and Linezolid
+Digoxin and Linezolid
+Cyclosporine and Linezolid
+Proton pump inhibitors and Linezolid
+Amiodarone and Linezolid","Amiodarone
+Antioxidant vitamins
+Aztreonam
+Clarithromycin
+Cyclosporine
+Dextromethorphan
+Digoxin
+Levothyroxine
+Linezolid
+Magnesium-containing antacids
+P-glycoprotein.
+Phenobarbital
+Phenylpropanolamine
+Proton pump inhibitors
+Rifampicin
+Venlafaxine","Rifampicin + Linezolid
+Levothyroxine + Linezolid
+Venlafaxine + Linezolid
+Phenobarbital + Linezolid
+Clarithromycin + Linezolid
+Digoxin + Linezolid
+Cyclosporine + Linezolid
+Proton pump inhibitors + Linezolid
+Amiodarone + Linezolid"
+https://www.sciencedirect.com/science/article/abs/pii/S016557282300231X?via%3Dihub,"acetylcholine receptor (AChR)
+cytochrome P450
+cytochrome P450 3A5 (CYP3A5)
+intravenous immune globulin (IVIG)
+low-density lipoprotein receptor-related protein 4 (LRP4)
+muscle-specific receptor tyrosine kinase (MuSK)
+Nirmatrelvir
+Paxlovid
+pyridostigmine
+Ritonavir
+ryanodine receptor (RyR)
+Tacrolimus",Tacrolimus and Paxlovid,"acetylcholine receptor (AChR).
+cytochrome P450 3A5 (CYP3A5)
+glucocorticoids
+IVIG (intravenous immune globulin)
+low-density lipoprotein receptor-related protein 4 (LRP4)
+muscle-specific receptor tyrosine kinase (MuSK)
+nirmatrelvir
+Paxlovid (Nirmatveer/Ritonavir)
+pyridostigmine
+ryanodine receptor (RyR)
+Tacrolimus (FK506)
+thymectomy",Tacrolimus and Paxlovid
