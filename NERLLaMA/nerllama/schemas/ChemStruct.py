@@ -5,7 +5,7 @@ import torch
 from torch.utils.data import Dataset
 from tqdm import tqdm
 from typing import TypedDict
-from NERLLaMA.src.schemas.Conversation import Conversation, get_conv_template
+from nerllama.schemas.Conversation import Conversation, get_conv_template
 
 from transformers import (
     AutoModelForCausalLM,
@@ -14,7 +14,7 @@ from transformers import (
     PreTrainedTokenizer,
 )
 
-from NERLLaMA.src.schemas.Misc import tokenize
+from nerllama.schemas.Misc import tokenize
 from transformers.trainer_pt_utils import LabelSmoother
 
 IGNORE_TOKEN_ID = LabelSmoother.ignore_index

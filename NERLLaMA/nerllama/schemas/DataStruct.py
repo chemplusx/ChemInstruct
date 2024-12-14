@@ -5,23 +5,23 @@ from tqdm import tqdm
 from sklearn.model_selection import train_test_split
 from typing import Union
 
-from NERLLaMA.src.schemas.ChemStruct import ChemStruct
-from NERLLaMA.src.schemas.Misc import Record
+from nerllama.schemas.ChemStruct import ChemStruct
+from nerllama.schemas.Misc import Record
 from transformers import PreTrainedTokenizer
-from NERLLaMA.src.utils.train_utils import (
+from nerllama.utils.train_utils import (
     create_output_from_entities,
     MODEL_INPUT_TEMPLATE,
 )
-from NERLLaMA.src.utils.utils import load_lines, parse_jsonl
+from nerllama.utils.utils import load_lines, parse_jsonl
 
-from NERLLaMA.src.schemas.ChemStruct import preprocess2
-from NERLLaMA.src.schemas.Conversation import rank0_print
+from nerllama.schemas.ChemStruct import preprocess2
+from nerllama.schemas.Conversation import rank0_print
 
 ENTITY_TYPES = ["chemical"]
 ENTITY_DEFENITIONS = [
     "mention of drugs, organic compounds, protiens and any other chemical substances"
 ]
-INSTRUCTION_TEXT = "You are solving the NER problem. Extract from the text words related to each of the following entities: chemical"
+INSTRUCTION_TEXT = "You are solving the Chemical Named Entity Recognition problem. Extract from the text words related to chemical entities"
 INSTRUCTION_TEXT_RAG = """
 From the text, extract all the exact mentions of chemical entities. (A chemical entity can be drugs, organic compounds, protiens, enzymes and any other chemical substances)
 """

@@ -6,14 +6,15 @@ from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import transformers
 import torch
+from huggingface_hub import HfFolder
 
-from NERLLaMA.src.common.constants import (
+from nerllama.common.constants import (
     LLAMA_MODELS,
     LLAMA_CHAT_MODELS,
     AUTH_TOKEN_REQUIREMENT_ERROR,
 )
-from NERLLaMA.src.fine_tuned.llama2_chat import batch
-from NERLLaMA.src.schemas.DataStruct import create_train_test_instruct_datasets
+from nerllama.fine_tuned.llama2_chat import batch
+from nerllama.schemas.DataStruct import create_train_test_instruct_datasets
 
 
 def generate(model, sources, generation_config):
@@ -30,7 +31,7 @@ def generate(model, sources, generation_config):
 
     max_instances = -1
     _, test_dataset = create_train_test_instruct_datasets(
-        "../src/data/annotated_nlm.json"
+        "../nerllama/data/annotated_nlm.json"
     )
     if max_instances != -1 and max_instances < len(test_dataset):
         test_dataset = test_dataset[:max_instances]
@@ -92,12 +93,13 @@ def run(
         raise Exception(f"Invalid model. Model: {model_name}")
     if not auth_token:
         raise Exception(f"Invalid/Empty Auth Token. {AUTH_TOKEN_REQUIREMENT_ERROR}")
-    if not inputFile or not Path(inputFile).exists():
+    if not inputFile:
         raise Exception(f"Invalid/Empty Dataset file. File: {inputFile}")
 
     if model_name is None:
         model_name = "mistralai/Mistral-7B-Instruct-v0.2"
 
+    HfFolder.save_token(auth_token)
     try:
         generate(model_name, text, max_new_tokens)
     except:

@@ -13,12 +13,8 @@ from transformers import (
 from peft import PeftConfig, PeftModel
 from huggingface_hub.hf_api import HfFolder
 
-from NERLLaMA.src.common.constants import LLAMA_MODELS, AUTH_TOKEN_REQUIREMENT_ERROR
-from NERLLaMA.src.schemas.DataStruct import create_train_test_instruct_datasets
-
-HfFolder.save_token("<your_hf_api_token>")
-
-token = "<your_hf_api_token>"
+from nerllama.common.constants import LLAMA_MODELS, AUTH_TOKEN_REQUIREMENT_ERROR
+from nerllama.schemas.DataStruct import create_train_test_instruct_datasets
 
 
 def batch(iterable, n=1):
@@ -34,9 +30,9 @@ def batch(iterable, n=1):
 def generate(model, sources, generation_config):
     model_name = "chrohi/llama2-NLMC-NER-FT"
 
-    generation_config = GenerationConfig.from_pretrained(model_name, token=token)
+    generation_config = GenerationConfig.from_pretrained(model_name)
 
-    peft_config = PeftConfig.from_pretrained(model_name, token=token)
+    peft_config = PeftConfig.from_pretrained(model_name)
     base_model_name = peft_config.base_model_name_or_path
 
     models = {
@@ -46,11 +42,11 @@ def generate(model, sources, generation_config):
     }
 
     model = AutoModelForCausalLM.from_pretrained(
-        base_model_name, load_in_8bit=True, device_map="auto", token=token
+        base_model_name, load_in_8bit=False, device_map="auto"
     )
 
-    model = PeftModel.from_pretrained(model, model_name, token=token)
-    tokenizer = AutoTokenizer.from_pretrained(model_name, token=token)
+    model = PeftModel.from_pretrained(model, model_name)
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
 
     model.eval()
     model = torch.compile(model)
@@ -61,7 +57,7 @@ def generate(model, sources, generation_config):
 
     max_instances = -1
     _, test_dataset = create_train_test_instruct_datasets(
-        "../src/data/annotated_nlm.json"
+        "../nerllama/data/annotated_nlm.json"
     )
     if max_instances != -1 and max_instances < len(test_dataset):
         test_dataset = test_dataset[:max_instances]
@@ -108,16 +104,16 @@ def run(
     max_new_tokens=256,
     auth_token=None,
 ):
-    if not model_name or model_name not in LLAMA_MODELS:
+    if not model_name:
         raise Exception(f"Invalid model. Model: {model_name}")
     if not auth_token:
         raise Exception(f"Invalid/Empty Auth Token. {AUTH_TOKEN_REQUIREMENT_ERROR}")
-    if not inputFile or not Path(inputFile).exists():
+    if not inputFile:
         raise Exception(f"Invalid/Empty Dataset file. File: {inputFile}")
 
     if model_name is None:
         model_name = "ChemPlusX/llama2-base-ft-NER"
-
+    HfFolder.save_token(auth_token)
     try:
         with wandb.init(project="Instruction NER") as run:
             generate(model_name, text, max_new_tokens)

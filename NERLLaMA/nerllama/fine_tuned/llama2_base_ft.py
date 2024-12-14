@@ -1,6 +1,7 @@
 from pathlib import Path
 
 import pandas as pd
+from huggingface_hub import HfFolder
 from vllm import LLM, SamplingParams
 import os
 import torch
@@ -8,14 +9,10 @@ from transformers import (
     LlamaTokenizer,
 )
 
-from huggingface_hub.hf_api import HfFolder
-
-from NERLLaMA.src.common.constants import LLAMA_MODELS, AUTH_TOKEN_REQUIREMENT_ERROR
-from NERLLaMA.src.schemas.Conversation import preprocess_instance
+from nerllama.common.constants import LLAMA_MODELS, AUTH_TOKEN_REQUIREMENT_ERROR
+from nerllama.schemas.Conversation import preprocess_instance
 
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:256"
-
-HfFolder.save_token("<your_hf_api_token>")
 
 
 def get_response(responses):
@@ -64,12 +61,13 @@ def run(
         raise Exception(f"Invalid model. Model: {model_name}")
     if not auth_token:
         raise Exception(f"Invalid/Empty Auth Token. {AUTH_TOKEN_REQUIREMENT_ERROR}")
-    if (not inputFile or not Path(inputFile).exists()) and not text:
+    if (not inputFile) and not text:
         raise Exception(f"Invalid/Empty Dataset file. File: {inputFile}")
 
     if model_name is None:
         model_name = "ChemPlusX/llama2-base-ft-NER"
 
+    HfFolder.save_token(auth_token)
     model = LLM(model=model_name)
     tokenizer = LlamaTokenizer.from_pretrained(model_name)
     tokenizer.pad_token_id = 0

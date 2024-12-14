@@ -13,11 +13,11 @@ from llama_index import VectorStoreIndex, SimpleDirectoryReader
 import pandas as pd
 from pathlib import Path
 
-from NERLLaMA.src.common.constants import (
+from nerllama.common.constants import (
     LLAMA_MODELS,
     AUTH_TOKEN_REQUIREMENT_ERROR,
 )
-from NERLLaMA.src.schemas.DataStruct import INSTRUCTION_TEXT_RAG, SYSTEM_PROMPT
+from nerllama.schemas.DataStruct import INSTRUCTION_TEXT_RAG, SYSTEM_PROMPT
 
 
 @st.cache_resource
